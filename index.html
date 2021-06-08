@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>jogo da velha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Jogo da velha</h1>
+    <section>
+        <table>
+            <tbody>
+                <tr>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                </tr>
+                <tr>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                </tr>
+                <tr>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                    <td onclick="marcar(this)"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p>
+            <button onclick='restart()' type='button'>restart</button>
+        </p>
+    </section>
+    <script>
+        let jogador = 1;
+
+        function marcar(td) {
+            if (td.innerHTML) return;
+            if (jogador == 1) {
+                td.innerHTML = "X";
+                jogador = 2;
+            } else {
+                td.innerHTML = 'O';
+                jogador = 1;
+            }
+
+        }
+
+        function restart() {
+            let tds = document.
+            getElementsByTagName('td');
+            for (let td of tds) {
+                td.innerHTML = '';
+            }
+        }
+    </script>
+</body>
+<!-- <footer>
+<p class="footer">lh.eliti.com.br </p>
+</footer> -->
+
+</html>

@@ -1,0 +1,62 @@
+/*body======================================*/
+
+body {
+    background: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0vw;
+}
+
+h1 {
+    font-weight: 100;
+    text-align: center;
+    color: white;
+    background: black;
+    margin-top: 0rem;
+    margin-left: 0rem;
+}
+
+
+/*table======================================*/
+
+table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-top: 100px;
+}
+
+td {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    background: black;
+}
+
+td:hover {
+    background: lightgrey;
+    cursor: pointer;
+}
+
+
+/*button======================================*/
+
+p {
+    text-align: center;
+}
+
+
+/*Footer======================================*/
+
+footer {
+    background: black;
+    margin-top: 2px;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+
+.footer {
+    padding-top: 0.4rem;
+}
